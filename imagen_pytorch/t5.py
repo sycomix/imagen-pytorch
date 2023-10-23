@@ -18,12 +18,10 @@ T5_CONFIGS = {}
 # singleton globals
 
 def get_tokenizer(name):
-    tokenizer = T5Tokenizer.from_pretrained(name)
-    return tokenizer
+    return T5Tokenizer.from_pretrained(name)
 
 def get_model(name):
-    model = T5EncoderModel.from_pretrained(name)
-    return model
+    return T5EncoderModel.from_pretrained(name)
 
 def get_model_and_tokenizer(name):
     global T5_CONFIGS

@@ -10,8 +10,7 @@ from PIL import Image
 
 def cycle(dl):
     while True:
-        for data in dl:
-            yield data
+        yield from dl
 
 # dataset and dataloader
 
